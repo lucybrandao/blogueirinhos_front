@@ -8,7 +8,7 @@
       >
         <span
           class="display-2 d-flex justify-center white--text"
-          style="float:center;margin-top:100px;text-shadow:2px 2px 4px #000;"
+          style="float:center;margin-top:70px;text-shadow:2px 2px 4px #000;"
         >
           Publications
         </span>

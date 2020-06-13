@@ -45,7 +45,7 @@
 
     <v-divider />
 
-    <div v-for="card in cards" :key="card.id" link  style="margin: 20px 68px">
+    <div v-for="card in cards" :key="card.id" link style="margin: 20px 68px">
       <v-hover>
         <template v-slot="{ hover }">
           <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6"  >
