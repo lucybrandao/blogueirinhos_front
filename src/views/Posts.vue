@@ -4,46 +4,24 @@
       <v-img
         src="https://cdn.pixabay.com/photo/2016/03/09/09/39/mountain-1245916_960_720.jpg"
         gradient="to top right, rgba(80,125,201,.39), rgba(25,32,72,.1)"
-        height="500px"
-        style="box-shadow: 0 8px 6px -3px rgba(0, 0, 0, 0.3), 0 8px 6px -3px rgba(0, 0, 0, 0.2);"
+        height="250px"
       >
         <span
+          class="display-2 d-flex justify-center white--text"
+          style="float:center;margin-top:100px;text-shadow:2px 2px 4px #000;"
+        >
+          Publications
+        </span>
+        <span
           class="display-1 d-flex justify-center white--text"
-          style="float:center;margin-top:150px;text-shadow:2px 2px 4px #000;"
-        >
-          Bem vindo ao projeto
-        </span>
-        <span
-          class="display-4 d-flex justify-center white--text"
           style="float:center;text-shadow:2px 2px 4px #000;"
         >
-          &lt;Blogueirinhos! /&gt;
-        </span>
-        <span
-          class="headline d-flex justify-center white--text"
-          style="float:center;text-shadow:2px 2px 4px #000;"
-        >
-          by L &amp; L
+          Browse articles, keep up to date, and learn more on our blog!
         </span>
       </v-img>
     </v-flex>
 
-    <div class="d-flex justify-center mt-md" style="margin-top: 24px">
-      <v-icon>mdi-chevron-down</v-icon>
-    </div>
-
-    <blockquote
-      class="blockquote headline font-weight-thin d-flex justify-center"
-      style="margin: 0 56px"
-    >
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Harum maiores modi quidem veniam, expedita quis laboriosam,
-      ullam facere adipisci, iusto,
-      voluptate sapiente corrupti asperiores rem nemo numquam fuga ab at. "
-    </blockquote>
-    <v-icon class="d-flex ml-auto" style="margin-bottom: 15px">mdi-earth</v-icon>
-
-    <v-divider />
+    <!-- <v-divider /> -->
 
     <div v-for="card in cards" :key="card.id" link  style="margin: 20px 68px">
       <v-hover>
@@ -56,12 +34,13 @@
         </template>
       </v-hover>
     </div>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Posts',
   data () {
     return {
       cards: [
